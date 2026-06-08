@@ -61,26 +61,60 @@ Este projeto foi criado para consolidar conhecimentos em desenvolvimento backend
 * Git
 * Maven (opcional)
 
-### Clonar o Repositório
+
+## 🖥️ Frontend
+
+O frontend foi desenvolvido utilizando React e consome a API da Comfort Store para exibição e gerenciamento dos produtos.
+
+### Pré-requisitos
+
+* Node.js 20+ (ou versão compatível)
+* npm
+
+Verifique a instalação:
+
+```bash
+node -v
+npm -v
+```
+
+### Clonar o projeto
 
 ```bash
 git clone https://github.com/Deceitful1/Comfort-Store.git
 ```
 
-### Acessar o Projeto
+### Acessar a pasta do frontend
 
 ```bash
-cd Comfort-Store
+cd frontend
 ```
 
-### Executar a Aplicação
+### Instalar as dependências
 
 ```bash
-./mvnw spring-boot:run
+npm install
 ```
 
-ou
+
+
+### Executar a aplicação
 
 ```bash
-mvn spring-boot:run
+npm run dev
 ```
+
+Após iniciar, a aplicação estará disponível em:
+
+```text
+http://localhost:5173
+```
+
+### Configuração da API
+ O projeto utiliza React Router com BrowserRouter. Em ambientes de produção, o servidor deve ser configurado para redirecionar todas as rotas para `index.html`.
+
+Caso necessário, altere a URL da API no arquivo de configuração do frontend para apontar para o backend local:
+```text
+http://localhost:8080
+```
+
