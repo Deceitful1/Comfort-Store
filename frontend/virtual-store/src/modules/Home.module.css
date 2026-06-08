@@ -1,0 +1,382 @@
+.banner_img {
+    width: 100%;
+
+}
+
+.main-banner-images img {
+    max-width: 10%;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+
+}
+
+.feature_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    flex: 1 1 200px;
+    max-width: 300px;
+    
+}
+
+.feature_card:hover {
+    background-color: #DAD2D6;
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+}
+
+
+.feature_card h3 {
+    color: #4f445b;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.feature_card_img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.features ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 200px;
+}
+
+
+
+#products_h1
+{
+    display: block !important;
+}
+.product-container
+{
+
+}
+.shop {
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    min-height: 20vh;
+ 
+   
+}
+.features
+{
+   display: flex;
+  
+   min-width: 0;
+   padding: 1rem;
+   
+}
+.features ul
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.options_padding
+{
+    padding: 1rem 3rem;
+}
+
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    width: 100%;
+    max-width:100%;
+    flex: 1;
+    min-width: 0;
+    gap: 1rem;
+   
+
+}
+.option {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-direction: row;
+    text-align: center;
+}
+.option h3
+{
+    font-size: 1.3rem;
+    font-family: "poppins";
+    font-weight: 500;
+    margin: 0;
+    margin-top: auto    ;
+}
+
+
+.options img {
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.choose_us_banner {
+    height: 40vh;
+    object-fit: cover;
+}
+
+.option {
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.icon
+{
+    align-self: center;
+}
+
+.option h3 {
+    color: #4f445b;
+}
+
+.all_products {
+    height: 90vh;
+    background-color: #ebebeb;
+    display: flex;
+    padding: 0 5rem;
+}
+
+.all_products h2 {
+    color: #4f445b;
+    font-family: 'jost';
+    font-size: 5rem;
+    font-weight: 500;
+    width: 90%;
+    letter-spacing: 0rem;
+    line-height: 5rem;
+    align-self: self-start;
+    margin-bottom: 0.5rem;
+
+}
+
+.all_products_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.cta_btn {
+    font-family: "jost";
+    font-size: 1.2rem;
+    color: #4f445b;
+    font-weight: 600;
+    padding: 0.7rem 5rem;
+    margin-top: 1rem;
+    align-self: flex-start;
+    border-radius: 0.5rem;
+    border: 3px solid #4f445b;
+    background-color: #FF8597;
+    transition: 0.5s;
+    margin-top: -0.1rem;
+
+}
+
+.cta_btn:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #FF7086;
+}
+
+.all_products_text p {
+    color: #4f445b;
+}
+
+.all_products_text h2 {}
+
+.all_products_text,
+.products_img_container {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.products_img_container {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products_img_container img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 2rem;
+    border: 6px solid #FF8597;
+
+}
+
+.contact_us {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.contact_us_banner {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+
+}
+
+.contact_container {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ECF8FD;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 3rem;
+   
+
+}
+#contact_btn
+{
+    align-self: center;
+    justify-self: center;
+    margin-top: -0.5rem;
+    font-size: 1.4rem;
+}
+
+.contact_container h3 {
+    font-size: 3.5rem;
+    color: #4f445b;
+    margin: 1.5rem;
+}
+
+.contact_container p {
+    width: 60%;
+    margin-top: 1.2rem;
+    align-self: center;
+    color: #3D3546;
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 1.3rem
+}
+.icon
+{
+z-index: 10;
+}
+svg
+{
+    width: 100%;
+    height: 286px;
+    max-width: 300px;
+   
+}
+
+.featured div img
+{
+    max-width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.product
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 1rem;
+    transition: 1s;
+}
+.product:hover
+{
+background-color: #fff;
+transition: 0.8s;
+transform: scale(1.1);
+}
+
+.product span
+{
+font-weight: 500;
+margin-top: 1rem;
+font-size: 1.5rem;
+}
+.product span:nth-child(3)
+{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.3rem;
+    font-style: italic;
+}
+.products_box
+{
+    background-color: #EBEBEB;  
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 0;
+}
+
+.products_box h1
+{
+    text-align: center;
+    margin:0;
+    font-size: 4rem;
+    font-family: 'Jost';
+    color: #3D3546;
+}
+.product-container
+{
+    margin: 0;
+    max-width: 1000px;
+}
+.product button
+{
+    margin-top: 0.2rem;
+    background-color: #FF8597;
+    padding: 0.5rem 2rem;
+    border: 3px solid black ;
+    border-radius: 0.5rem;
+    color: black;
+    font-weight: 500;
+    font-size: 1.4rem;
+    
+}

@@ -1,0 +1,60 @@
+package com.gablins.virtual_store.controllers;
+
+import com.gablins.VO.ProductVO;
+import com.gablins.virtual_store.entities.Product;
+import com.gablins.virtual_store.services.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping(value = "/store")
+@CrossOrigin(origins = "http://localhost:5173")
+public class StoreController
+{
+
+    private final ProductService productService;
+
+    public StoreController(ProductService productService)
+    {
+        this.productService = productService;
+    }
+
+
+    @RequestMapping(method = RequestMethod.GET)
+    public ResponseEntity<List<ProductVO>> findAll()
+    {
+        return ResponseEntity.status(200).body(productService.findAll());
+    }
+    @GetMapping("/{id}")
+    public ResponseEntity<ProductVO> findById(@PathVariable Long id)
+    {
+        return ResponseEntity.status(200).body(productService.findById(id));
+    }
+
+
+    @RequestMapping(method = RequestMethod.POST)
+    public ResponseEntity<ProductVO> addProduct(@RequestBody Product product)
+    {
+       return ResponseEntity.status(201).body(productService.create(product));
+    }
+
+    @RequestMapping(method = RequestMethod.PUT)
+    public ResponseEntity<ProductVO> updateProduct(@RequestBody Product product)
+    {
+        return ResponseEntity.ok(productService.update(product));
+    }
+
+    @RequestMapping(method = RequestMethod.DELETE, value = "/{id}")
+    public ResponseEntity<Void> deleteProduct(@PathVariable Long id)
+    {
+        productService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
+
+
+}

@@ -1,0 +1,1 @@
+ALTER table product add column image_url VARCHAR(255)

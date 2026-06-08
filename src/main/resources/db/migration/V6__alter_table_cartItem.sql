@@ -1,0 +1,1 @@
+ALTER TABLE cart_item ADD COLUMN list_number BIGINT NOT NULL DEFAULT 1;
