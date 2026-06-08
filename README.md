@@ -1,104 +1,86 @@
-# 🛒 My Virtual Store
+# 🍩 Comfort Store
 
-Uma API de e-commerce desenvolvida com **Java + Spring Boot**, com foco em simular o funcionamento de uma loja virtual completa, incluindo gerenciamento de produtos, usuários e regras de negócio.
-
-🔗 Repositório:  
-https://github.com/Deceitful1/my-virtual-store
+Uma aplicação full stack desenvolvida para simular a operação de uma confeitaria moderna, permitindo o gerenciamento de produtos, pedidos e clientes através de uma API REST construída com Java e Spring Boot.
 
 ![Java](https://img.shields.io/badge/Java-17-orange)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
 ![Maven](https://img.shields.io/badge/Maven-Build-blue)
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 ---
 
-## 📌 Sobre o projeto
+## 📌 Sobre o Projeto
 
-O **My Virtual Store** é uma aplicação backend que representa o núcleo de uma loja virtual, utilizando arquitetura em camadas bem definida.
+A **Comfort Store** é um projeto desenvolvido para fins de estudo e portfólio, com o objetivo de demonstrar a construção de uma aplicação moderna utilizando o ecossistema Spring.
 
-O projeto foi desenvolvido com o objetivo de mostrar:
+O sistema simula o backend de uma confeitaria, oferecendo recursos para gerenciamento de produtos, clientes e regras de negócio relacionadas ao catálogo da loja.
 
-- Domínio das tecnologias
-- Estruturação de APIs REST
-- Boas práticas com Spring Boot
-- Separação de responsabilidades (Controller, Service, Repository)
-- Segurança e tratamento de exceções
-- Persistência de dados com migrações
+Durante o desenvolvimento, são aplicados conceitos como:
 
----
-
-## 🛠️ Tecnologias utilizadas
-
-- ☕ Java  
-- 🌱 Spring Boot  
-- 🔐 Spring Security  
-- 🗄️ JPA / Hibernate  
-- 🧪 JUnit (testes)  
-- 🛢️ Banco de dados
-- 📦 Maven  
+* Desenvolvimento de APIs REST
+* Arquitetura em camadas
+* Boas práticas de programação orientada a objetos
+* Persistência de dados com JPA/Hibernate
+* Tratamento centralizado de exceções
+* Segurança de aplicações com Spring Security
+* Organização e escalabilidade de projetos Spring Boot
 
 ---
 
-## 📂 Estrutura do projeto
+## 🛠️ Tecnologias Utilizadas
+
+* Java 17
+* Spring Boot
+* Spring Security
+* Spring Data JPA
+* Hibernate
+* Maven
+* JUnit
+* Supabase
+
+---
+
+## 🎯 Objetivos do Projeto
+
+Este projeto foi criado para consolidar conhecimentos em desenvolvimento backend e demonstrar competências relacionadas a:
+
+* Criação de APIs REST escaláveis
+* Modelagem de entidades e relacionamentos
+* Implementação de regras de negócio
+* Integração com banco de dados
+* Testes automatizados
+* Boas práticas de arquitetura de software
+
+---
+
+## ⚙️ Como Executar o Projeto
+
+### Pré-requisitos
+
+* Java 17+
+* Git
+* Maven (opcional)
+
+### Clonar o Repositório
 
 ```bash
-src/
- ├── main/
- │   ├── java/com/gablins/
- │   │   ├── configuration/     # Configurações gerais da aplicação
- │   │   ├── exceptions/        # Tratamento de erros
- │   │   ├── security/          # Configuração de segurança (auth, filtros, etc)
- │   │   ├── virtual_store/
- │   │   │   ├── controllers/   # Camada de entrada (REST)
- │   │   │   ├── entities/      # Entidades do banco de dados
- │   │   │   ├── repositories/  # Acesso aos dados (JPA)
- │   │   │   └── services/      # Regras de negócio
- │   │   └── VO/                # Value Objects / DTOs
- │   └── resources/
- │       ├── db/migration/      # Scripts de migração (Flyway ou similar)
- │       ├── static/            # Arquivos estáticos
- │       └── templates/         # Templates (caso use)
- │
- └── test/
-     └── java/com/gablins/virtual_store/repositories  # Testes
+git clone https://github.com/Deceitful1/Comfort-Store.git
 ```
-## ⚙️ Como rodar o projeto
 
-### 📌 Pré-requisitos
-
-Antes de começar, você precisa ter instalado na sua máquina:
-
-- Java 17 ou superior
-- Git
-- Maven (opcional, pois o projeto usa Maven Wrapper)
-
-Abra o CMD e Verifique se está tudo ok:
+### Acessar o Projeto
 
 ```bash
-java -version
-git --version
+cd Comfort-Store
 ```
-### 📥 1. Clone o repositório
+
+### Executar a Aplicação
+
 ```bash
-git clone https://github.com/Deceitful1/my-virtual-store.git
+./mvnw spring-boot:run
 ```
 
-### 📂 2. Acesse a pasta do projeto
+ou
+
 ```bash
-cd my-virtual-store
+mvn spring-boot:run
 ```
-### ⚙️ 3. Configurações (application.properties)
-
-As configurações da aplicação estão em:
-```bash
-src/main/resources/application.properties
-```
-
-Aqui você pode alterar:
-
-- Porta da aplicação
-- Configuração do banco de dados
-- Credenciais
-- Configurações de segurança
-
