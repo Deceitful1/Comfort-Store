@@ -45,14 +45,6 @@ public class CartItemController
         return ResponseEntity.status(200).body(cartItemService.findById(user.userId(),id));
     }
 
-    /*
-    @GetMapping(value = "/order/{id}")
-    public ResponseEntity<CartItemDTO> getCartItemByOrder(@PathVariable Long id)
-    {
-        return ResponseEntity.status(200).body(cartItemService.findByOrder(id));
-    }x
-     */
-
     @PostMapping
     public ResponseEntity<CartItemDTO> addToCart(@AuthenticationPrincipal final JWTUserData user, @RequestBody Long productId)
     {

@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                     <div className={style.item}>
                         <div className={style.about_us}>
-                            <h4>Confort Store</h4>
+                            <h4>Comfort Store</h4>
                             <p>Transformamos ingredientes selecionados em momentos de pura felicidade. Nossos bolos e doces são feitos diariamente com amor, carinho e aquele gostinho artesanal que deixa qualquer dia mais doce.</p>
                         </div>
                     </div>
